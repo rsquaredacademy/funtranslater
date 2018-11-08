@@ -43,3 +43,26 @@ translate_cockney <- function(text) {
   }
 
 }
+
+#' Australian translator
+#'
+#' Translate from English to Australian accent.
+#'
+#' @param text Text to be translated.
+#'
+#' @examples
+#' \dontrun{
+#' translate_australian("What nonsense is this?")
+#' }
+#'
+#' @export
+#'
+translate_australian <- function(text) {
+
+  if (pingr::is_online()) {
+    prep_translate(text, "australian")
+  } else {
+    stop("Please check your internet connection.", call. = FALSE)
+  }
+
+}
