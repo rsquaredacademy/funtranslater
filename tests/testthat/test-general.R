@@ -18,4 +18,10 @@ httptest::with_mock_api({
       translate_jivetalk("I like the boy across the street!"),
       "I likes da damn boy across de street.  Right On!")
   })
+
+  test_that("ebonics translation works", {
+    expect_equivalent(
+      translate_ebonics("What nonsense is this?"),
+      "Yo! What nonsense ahs dahs?")
+  })
 })
