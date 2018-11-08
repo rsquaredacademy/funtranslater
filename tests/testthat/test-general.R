@@ -12,4 +12,10 @@ httptest::with_mock_api({
       translate_pirate("Hello sir! my mother goes with me to the ocean."),
       "Ahoy matey, by Blackbeard's sword!  me dear ol' mum, bless her black soul goes with me t' th' briny deep.")
   })
+
+  test_that("jive translation works", {
+    expect_equivalent(
+      translate_jivetalk("I like the boy across the street!"),
+      "I likes da damn boy across de street.  Right On!")
+  })
 })
