@@ -24,4 +24,10 @@ httptest::with_mock_api({
       translate_ebonics("What nonsense is this?"),
       "Yo! What nonsense ahs dahs?")
   })
+
+  test_that("valspeak translation works", {
+    expect_equivalent(
+      translate_valspeak("Good Morning. Come on man, just saying!"),
+      "Bitchin' Mornin'. Come on nerd, fer shure just sayin'")
+  })
 })

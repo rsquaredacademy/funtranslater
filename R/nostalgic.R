@@ -67,3 +67,26 @@ translate_ebonics <- function(text) {
 
 }
 
+#' Valspeak translator
+#'
+#' Translate from English to valspeak.
+#'
+#' @param text Text to be translated.
+#'
+#' @examples
+#' \dontrun{
+#' translate_valspeak("What nonsense is this?")
+#' }
+#'
+#' @export
+#'
+translate_valspeak <- function(text) {
+
+  if (pingr::is_online()) {
+    prep_translate(text, "valspeak")
+  } else {
+    stop("Please check your internet connection.", call. = FALSE)
+  }
+
+}
+
