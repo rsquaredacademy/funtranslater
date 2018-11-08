@@ -31,4 +31,10 @@ httptest::with_mock_api({
       "Bitchin' Mornin'. Come on nerd, fer shure just sayin'")
   })
 
+  test_that("brooklyn translation works", {
+    expect_equivalent(
+      translate_brooklyn("Where this is lots of love there is lots of fighting."),
+      "Where dis is lots of love dere is lots of fightin'.")
+  })
+
 })
