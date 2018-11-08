@@ -37,4 +37,10 @@ httptest::with_mock_api({
       "Where dis is lots of love dere is lots of fightin'.")
   })
 
+  test_that("cockney translation works", {
+    expect_equivalent(
+      translate_cockney("I'm little busy with the bike, but I love to eat the food."),
+      "I'm wee busy wiv the chuffin' bike, but I luv ter eat the chuffin' food.")
+  })
+
 })
