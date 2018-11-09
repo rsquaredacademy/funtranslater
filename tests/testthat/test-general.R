@@ -61,4 +61,10 @@ httptest::with_mock_api({
       "W]-[3R3 THYZ Is LOTs ()ph 1OV3 T]-[eR3 !5 l0tz 0ph fYG]-[TYgng.")
   })
 
+  test_that("shakespeare translation works", {
+    expect_equivalent(
+      translate_shakespeare("You gave Mr. Tim a hearty meal, but unfortunately what he ate made him die."),
+      "Thou did giveth Mr. Tim a hearty meal,  but unfortunately what he englut did maketh him kicketh the bucket.")
+  })
+
 })
