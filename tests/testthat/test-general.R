@@ -67,12 +67,6 @@ httptest::with_mock_api({
       "Thou did giveth Mr. Tim a hearty meal,  but unfortunately what he englut did maketh him kicketh the bucket.")
   })
 
-  test_that("old english translation works", {
-    expect_equivalent(
-      translate_old_english("Mr. Tim ate a hearty meal, but unfortunately what he ate made him die."),
-      " {Mr}. {Tim} {ate} twihynde innancund m¯æle, oð {unfortunately} {what} sê {ate} fæstnian of hê sweltan.")
-  })
-
   test_that("us to uk english translation works", {
     expect_equivalent(
       translate_us_to_uk_english("He agonized over the aging armored cars."),
@@ -100,7 +94,7 @@ httptest::with_mock_api({
   test_that("gungan translation works", {
     expect_equivalent(
       translate_gungan("You came to my home and I said okay!"),
-      "Nu went kia coruscant which meo ten parsekas salini!")
+      "Yousa came to mesa home and mesa said okeeday!")
   })
 
   test_that("huttese translation works", {
@@ -133,64 +127,56 @@ httptest::with_mock_api({
       "'iv do tlhih baj? Chah are going to baq tlhih.")
   })
 
-  test_that("romulan translation works", {
-    expect_equivalent(
-      translate_romulan("May I say that I have not thoroughly enjoyed serving with humans? I find their illogical and foolish emotions a constant irritant."),
-      "'iv do tlhih baj? Chah are going to baq tlhih.")
-  })
-
-  test_that("dothraki translation works", {
-    expect_equivalent(
-      translate_dothraki("Have you seen my lady’s dragon?"),
-      "Hash yeri ray tih erinak’s zhavorsa?")
-  })
-
   test_that("valyrian translation works", {
+    skip_on_travis()
+    skip_on_appveyor()
     expect_equivalent(
       translate_valyrian("I am Daenerys Stormborn of the House Targaryen, of the blood of Old Valyria. Valyrian is my mother tongue."),
-      "Hash yeri ray tih erinak’s zhavorsa?")
+      "Nyke Daenerys jelmazmo hen se lentor targarien,  hen se anogar hen uepa valyrio. Valyriha iksos issa muñnykea engos.")
   })
 
   test_that("sindarin translation works", {
     expect_equivalent(
       translate_sindarin("The world is changed; I can feel it in the water, I can feel it in the earth, I can smell it in the air."),
-      "Hash yeri ray tih erinak’s zhavorsa?")
+      "I ambar na- changed; im tur- feel ha in i nen,  im tur- feel ha in i coe,  im tur- smell ha in i gwilith.")
   })
 
   test_that("quenya translation works", {
+    skip_on_travis()
+    skip_on_appveyor()
     expect_equivalent(
       translate_quenya("I am Arwen - I've come to help you. Hear my voice... Come back to the light."),
-      "Hash yeri ray tih erinak’s zhavorsa?")
+      "Ni am Arwen - ni've túl ana help tye. Lar- mime óma. Túl at- ana i kal.")
   })
 
   test_that("minion translation works", {
     expect_equivalent(
       translate_minion("Hello, I am hungry!"),
-      "Hash yeri ray tih erinak’s zhavorsa?")
+      "Bello, ka am con a banana!")
   })
 
   test_that("ferb latin translation works", {
     expect_equivalent(
       translate_ferblatin("Well, if by that you mean we should create a whole new form of communication, then I couldn't agree more."),
-      "Hash yeri ray tih erinak’s zhavorsa?")
+      "ell-Werb, if by hat-terb ou-yerb ean-merb we hould-serb reate-cerb a hole-werb ew-nerb orm-ferb of ommunication-cerb, hen-terb I couldn't gree-aerb more. ")
   })
 
   test_that("swedish chef translation works", {
     expect_equivalent(
       translate_chef("Cooking is fun when you do it with a chef"),
-      "Hash yeri ray tih erinak’s zhavorsa?")
+      "Cuokeeng is fuon vhee-a yuou du it vit a cheff")
   })
 
   test_that("dolan translation works", {
     expect_equivalent(
       translate_dolan("I have to give a presentation to people."),
-      "Hash yeri ray tih erinak’s zhavorsa?")
+      "Ai hav 2 gievn prezintashun 2 ppl.")
   })
 
   test_that("fudd translation works", {
     expect_equivalent(
       translate_fudd("Be very very quiet. I am hunting rabbits."),
-      "Hash yeri ray tih erinak’s zhavorsa?")
+      "Be vewy vewy qwiet. I am hunting wabbits.")
   })
 
 })
