@@ -174,4 +174,10 @@ httptest::with_mock_api({
       translate_ferblatin("Well, if by that you mean we should create a whole new form of communication, then I couldn't agree more."),
       "Hash yeri ray tih erinak’s zhavorsa?")
   })
+
+  test_that("swedish chef translation works", {
+    expect_equivalent(
+      translate_chef("Cooking is fun when you do it with a chef"),
+      "Hash yeri ray tih erinak’s zhavorsa?")
+  })
 })

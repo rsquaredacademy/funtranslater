@@ -43,3 +43,26 @@ translate_ferblatin <- function(text) {
   }
 
 }
+
+#' Swedish chef translation
+#'
+#' Convert from English to Swedish chef speak.
+#'
+#' @param text Text to be converted.
+#'
+#' @examples
+#' \dontrun{
+#' translate_chef("What nonsense is this?")
+#' }
+#'
+#' @export
+#'
+translate_chef <- function(text) {
+
+  if (pingr::is_online()) {
+    prep_translate(text, "chef")
+  } else {
+    stop("Please check your internet connection.", call. = FALSE)
+  }
+
+}
