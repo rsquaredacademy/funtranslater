@@ -85,4 +85,10 @@ httptest::with_mock_api({
       "The artifacts of the behavioral elements canceled the commercialized monotone.")
   })
 
+  test_that("yoda translation works", {
+    expect_equivalent(
+      translate_yoda("Master Obiwan has lost a planet."),
+      "Lost a planet,  master obiwan has. Hmmmm! Herh Herh Herh Herh!  ")
+  })
+
 })
