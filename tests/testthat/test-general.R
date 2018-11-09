@@ -43,9 +43,10 @@ httptest::with_mock_api({
       "I'm wee busy wiv the chuffin' bike, but I luv ter eat the chuffin' food.")
   })
 
-test_that("australian translation works", {
+  test_that("australian translation works", {
     expect_equivalent(
       translate_australian("I went to Australian and the cheap wine made me crave for McDonald's burgers."),
       "I went to Australian and the cheap wine made me crave for maccas burgers.")
   })
+  
 })
