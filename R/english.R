@@ -20,3 +20,26 @@ translate_shakespeare <- function(text) {
   }
 
 }
+
+#' Old English translation
+#'
+#' Convert from modern English to old English.
+#'
+#' @param text Text to be converted.
+#'
+#' @examples
+#' \dontrun{
+#' translate_old_english("What nonsense is this?")
+#' }
+#'
+#' @export
+#'
+translate_old_english <- function(text) {
+
+  if (pingr::is_online()) {
+    prep_translate(text, "oldenglish")
+  } else {
+    stop("Please check your internet connection.", call. = FALSE)
+  }
+
+}

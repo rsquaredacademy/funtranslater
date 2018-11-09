@@ -67,4 +67,10 @@ httptest::with_mock_api({
       "Thou did giveth Mr. Tim a hearty meal,  but unfortunately what he englut did maketh him kicketh the bucket.")
   })
 
+  test_that("old english translation works", {
+    expect_equivalent(
+      translate_old_english("Mr. Tim ate a hearty meal, but unfortunately what he ate made him die."),
+      " {Mr}. {Tim} {ate} twihynde innancund m¯æle, oð {unfortunately} {what} sê {ate} fæstnian of hê sweltan.")
+  })
+
 })
