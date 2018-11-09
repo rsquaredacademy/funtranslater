@@ -109,4 +109,9 @@ httptest::with_mock_api({
       "Did u stuka doe murishani?")
   })
 
+  test_that("mandalorian translation works", {
+    expect_equivalent(
+      translate_mandalorian("I'd like a pint of ale"),
+      "Ni'd guuror a pint cuyir gal")
+  })
 })

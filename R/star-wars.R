@@ -89,3 +89,26 @@ translate_huttese <- function(text) {
   }
 
 }
+
+#' Mandalorian translation
+#'
+#' Convert from English to Mandalorian language.
+#'
+#' @param text Text to be converted.
+#'
+#' @examples
+#' \dontrun{
+#' translate_mandalorian("What nonsense is this?")
+#' }
+#'
+#' @export
+#'
+translate_mandalorian <- function(text) {
+
+  if (pingr::is_online()) {
+    prep_translate(text, "mandalorian")
+  } else {
+    stop("Please check your internet connection.", call. = FALSE)
+  }
+
+}
