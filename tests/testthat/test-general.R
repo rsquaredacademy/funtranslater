@@ -91,4 +91,10 @@ httptest::with_mock_api({
       "Lost a planet,  master obiwan has. Hmmmm! Herh Herh Herh Herh!  ")
   })
 
+  test_that("sith translation works", {
+    expect_equivalent(
+      translate_sith("I went to coruscant which was ten parsec away!"),
+      "Nu went kia coruscant which meo ten parsekas salini!")
+  })
+
 })
