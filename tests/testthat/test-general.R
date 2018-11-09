@@ -168,4 +168,10 @@ httptest::with_mock_api({
       translate_minion("Hello, I am hungry!"),
       "Hash yeri ray tih erinak’s zhavorsa?")
   })
+
+  test_that("ferb latin translation works", {
+    expect_equivalent(
+      translate_ferblatin("Well, if by that you mean we should create a whole new form of communication, then I couldn't agree more."),
+      "Hash yeri ray tih erinak’s zhavorsa?")
+  })
 })

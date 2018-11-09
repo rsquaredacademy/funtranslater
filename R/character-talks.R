@@ -20,3 +20,26 @@ translate_minion <- function(text) {
   }
 
 }
+
+#' Ferb Latin translation
+#'
+#' Convert from English to Ferb Latin.
+#'
+#' @param text Text to be converted.
+#'
+#' @examples
+#' \dontrun{
+#' translate_ferblatin("What nonsense is this?")
+#' }
+#'
+#' @export
+#'
+translate_ferblatin <- function(text) {
+
+  if (pingr::is_online()) {
+    prep_translate(text, "ferblatin")
+  } else {
+    stop("Please check your internet connection.", call. = FALSE)
+  }
+
+}
