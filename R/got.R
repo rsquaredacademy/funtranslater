@@ -20,3 +20,26 @@ translate_dothraki <- function(text) {
   }
 
 }
+
+#' Valyrian translation
+#'
+#' Convert from English to Valyrian.
+#'
+#' @param text Text to be converted.
+#'
+#' @examples
+#' \dontrun{
+#' translate_valyrian("What nonsense is this?")
+#' }
+#'
+#' @export
+#'
+translate_valyrian <- function(text) {
+
+  if (pingr::is_online()) {
+    prep_translate(text, "valyrian")
+  } else {
+    stop("Please check your internet connection.", call. = FALSE)
+  }
+
+}
