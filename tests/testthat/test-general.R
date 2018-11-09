@@ -114,4 +114,10 @@ httptest::with_mock_api({
       translate_mandalorian("I'd like a pint of ale"),
       "Ni'd guuror a pint cuyir gal")
   })
+
+  test_that("cheunh translation works", {
+    expect_equivalent(
+      translate_cheunh("I went to coruscant which was ten parsec away!"),
+      "Ch'ah went ch'at coruscant vea was bav parsec ch'itt'suvrecah!")
+  })
 })

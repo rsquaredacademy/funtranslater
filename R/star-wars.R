@@ -112,3 +112,26 @@ translate_mandalorian <- function(text) {
   }
 
 }
+
+#' Cheunh translation
+#'
+#' Convert from English to Cheunh language.
+#'
+#' @param text Text to be converted.
+#'
+#' @examples
+#' \dontrun{
+#' translate_cheunh("What nonsense is this?")
+#' }
+#'
+#' @export
+#'
+translate_cheunh <- function(text) {
+
+  if (pingr::is_online()) {
+    prep_translate(text, "cheunh")
+  } else {
+    stop("Please check your internet connection.", call. = FALSE)
+  }
+
+}
