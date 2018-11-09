@@ -1,0 +1,111 @@
+url: https://funtranslater.rsquaredacademy.com
+
+authors:
+  Aravind Hebbali:
+    href: https://www.aravindhebbali.com
+
+templates:
+  params:
+    bootswatch: cosmo
+    docsearch:
+      api_key:
+      index_name: funtranslater
+
+navbar:
+  title: "funtranslater"
+  type: inverse
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Reference"
+      menu:
+        - text: "Functions"
+          href: reference/index.html
+        - text: "News"
+          href: news/index.html
+  right:
+    - icon: fa-github
+      href: https://github.com/rsquaredacademy/funtranslater
+
+
+home:
+  links:
+  - text: Learn more
+    href: https://www.rsquaredacademy.com
+
+
+reference:
+- title: Genral
+
+  contents:
+  - translate_piglatin
+
+- title: Nostalgic 
+
+  contents:
+  - translate_ebonics
+  - translate_jivetalk
+  - translate_pirate
+  - translate_valspeak
+  
+- title: Places 
+
+  contents:
+  - translate_australian
+  - translate_austrian
+  - translate_boston
+  - translate_brooklyn
+  - translate_cockney
+  
+- title: Internet Fads
+
+  contents:
+  - translate_emoji
+  - translate_leetspeak
+
+- title: English
+
+  contents:
+  - translate_old_english
+  - translate_shakespeare 
+  - translate_uk_to_us_english
+  - translate_us_to_uk_english
+
+- title: Star Wars
+
+  contents:
+  - translate_cheunh
+  - translate_gungan 
+  - translate_huttese
+  - translate_mandalorian
+  - translate_sith
+  - translate_yoda
+
+- title: Star Trek
+
+  contents:
+  - translate_klingon
+  - translate_vulcan
+
+- title: Game of Thrones
+
+  contents:
+  - translate_dothraki
+  - translate_valyrian
+
+- title: Elvish
+
+  contents:
+  - translate_quenya
+  - translate_sindarin
+
+- title: Character Talks
+
+  contents:
+  - translate_chef
+  - translate_dolan
+  - translate_ferblatin 
+  - translate_fudd
+  - translate_minion
+
+

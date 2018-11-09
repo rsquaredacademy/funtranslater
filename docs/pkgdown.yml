@@ -1,0 +1,8 @@
+pandoc: 2.0.5
+pkgdown: 1.1.0
+pkgdown_sha: ~
+articles: []
+urls:
+  reference: https://funtranslater.rsquaredacademy.com/reference
+  article: https://funtranslater.rsquaredacademy.com/articles
+

@@ -1,2 +1,8 @@
+^codecov\.yml$
+^\.travis\.yml$
+^appveyor\.yml$
+^LICENSE\.md$
+^CODE_OF_CONDUCT\.md$
+^README\.Rmd$
 ^.*\.Rproj$
 ^\.Rproj\.user$
