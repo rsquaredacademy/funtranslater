@@ -126,4 +126,10 @@ httptest::with_mock_api({
       translate_vulcan("May I say that I have not thoroughly enjoyed serving with humans? I find their illogical and foolish emotions a constant irritant."),
       "Lau I leralmin ik I ma ri thoroughly tizh-tor serving k' komihn? I talal ish-veh riolozhikaik heh duhik zherka wuh ek'kayik ornat.")
   })
+
+  test_that("klingon translation works", {
+    expect_equivalent(
+      translate_klingon("Who do you work for? They are going to terminate you."),
+      "'iv do tlhih baj? Chah are going to baq tlhih.")
+  })
 })

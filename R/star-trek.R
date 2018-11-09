@@ -20,3 +20,26 @@ translate_vulcan <- function(text) {
   }
 
 }
+
+#' Klingon translation
+#'
+#' Convert from English to Klingon language.
+#'
+#' @param text Text to be converted.
+#'
+#' @examples
+#' \dontrun{
+#' translate_klingon("What nonsense is this?")
+#' }
+#'
+#' @export
+#'
+translate_klingon <- function(text) {
+
+  if (pingr::is_online()) {
+    prep_translate(text, "klingon")
+  } else {
+    stop("Please check your internet connection.", call. = FALSE)
+  }
+
+}
