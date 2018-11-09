@@ -2,7 +2,7 @@
 % Please edit documentation in R/character-talks.R
 \name{translate_ferblatin}
 \alias{translate_ferblatin}
-\title{Ferb Latin translation}
+\title{Ferb Latin translator}
 \usage{
 translate_ferblatin(text)
 }

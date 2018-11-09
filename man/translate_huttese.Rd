@@ -2,7 +2,7 @@
 % Please edit documentation in R/star-wars.R
 \name{translate_huttese}
 \alias{translate_huttese}
-\title{Huttese translation}
+\title{Huttese translator}
 \usage{
 translate_huttese(text)
 }

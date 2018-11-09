@@ -1,4 +1,4 @@
-#' Vulcan translation
+#' Vulcan translator
 #'
 #' Convert from English to Vulcan language.
 #'
@@ -21,7 +21,7 @@ translate_vulcan <- function(text) {
 
 }
 
-#' Klingon translation
+#' Klingon translator
 #'
 #' Convert from English to Klingon language.
 #'
@@ -44,25 +44,3 @@ translate_klingon <- function(text) {
 
 }
 
-#' Romulan translation
-#'
-#' Convert from English to Romulan language.
-#'
-#' @param text Text to be converted.
-#'
-#' @examples
-#' \dontrun{
-#' translate_romulan("What nonsense is this?")
-#' }
-#'
-#' @export
-#'
-translate_romulan <- function(text) {
-
-  if (pingr::is_online()) {
-    prep_translate(text, "romulan")
-  } else {
-    stop("Please check your internet connection.", call. = FALSE)
-  }
-
-}

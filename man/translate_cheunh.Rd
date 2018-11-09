@@ -2,7 +2,7 @@
 % Please edit documentation in R/star-wars.R
 \name{translate_cheunh}
 \alias{translate_cheunh}
-\title{Cheunh translation}
+\title{Cheunh translator}
 \usage{
 translate_cheunh(text)
 }

@@ -1,4 +1,4 @@
-#' Dothraki translation
+#' Dothraki translator
 #'
 #' Convert from English to Dothraki.
 #'
@@ -21,7 +21,7 @@ translate_dothraki <- function(text) {
 
 }
 
-#' Valyrian translation
+#' Valyrian translator
 #'
 #' Convert from English to Valyrian.
 #'

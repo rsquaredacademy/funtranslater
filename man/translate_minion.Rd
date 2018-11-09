@@ -2,7 +2,7 @@
 % Please edit documentation in R/character-talks.R
 \name{translate_minion}
 \alias{translate_minion}
-\title{Minion translation}
+\title{Minion translator}
 \usage{
 translate_minion(text)
 }

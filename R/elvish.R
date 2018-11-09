@@ -1,4 +1,4 @@
-#' Sindarin translation
+#' Sindarin translator
 #'
 #' Convert from English to Sindarin.
 #'
@@ -21,7 +21,7 @@ translate_sindarin <- function(text) {
 
 }
 
-#' Quenya translation
+#' Quenya translator
 #'
 #' Convert from English to Quenya.
 #'

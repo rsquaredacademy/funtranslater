@@ -2,7 +2,7 @@
 % Please edit documentation in R/star-wars.R
 \name{translate_sith}
 \alias{translate_sith}
-\title{Sith translation}
+\title{Sith translator}
 \usage{
 translate_sith(text)
 }

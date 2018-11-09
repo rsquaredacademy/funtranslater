@@ -2,7 +2,7 @@
 % Please edit documentation in R/got.R
 \name{translate_dothraki}
 \alias{translate_dothraki}
-\title{Dothraki translation}
+\title{Dothraki translator}
 \usage{
 translate_dothraki(text)
 }

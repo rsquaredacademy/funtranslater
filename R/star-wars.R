@@ -1,4 +1,4 @@
-#' Yoda translation
+#' Yoda translator
 #'
 #' Convert from English to Yoda speak.
 #'
@@ -21,7 +21,7 @@ translate_yoda <- function(text) {
 
 }
 
-#' Sith translation
+#' Sith translator
 #'
 #' Convert from English to Sith language.
 #'
@@ -44,7 +44,7 @@ translate_sith <- function(text) {
 
 }
 
-#' Gungan translation
+#' Gungan translator
 #'
 #' Convert from English to Gungan language.
 #'
@@ -67,7 +67,7 @@ translate_gungan <- function(text) {
 
 }
 
-#' Huttese translation
+#' Huttese translator
 #'
 #' Convert from English to Huttese language.
 #'
@@ -90,7 +90,7 @@ translate_huttese <- function(text) {
 
 }
 
-#' Mandalorian translation
+#' Mandalorian translator
 #'
 #' Convert from English to Mandalorian language.
 #'
@@ -113,7 +113,7 @@ translate_mandalorian <- function(text) {
 
 }
 
-#' Cheunh translation
+#' Cheunh translator
 #'
 #' Convert from English to Cheunh language.
 #'

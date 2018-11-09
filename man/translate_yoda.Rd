@@ -2,7 +2,7 @@
 % Please edit documentation in R/star-wars.R
 \name{translate_yoda}
 \alias{translate_yoda}
-\title{Yoda translation}
+\title{Yoda translator}
 \usage{
 translate_yoda(text)
 }

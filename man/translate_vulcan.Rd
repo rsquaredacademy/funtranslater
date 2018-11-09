@@ -2,7 +2,7 @@
 % Please edit documentation in R/star-trek.R
 \name{translate_vulcan}
 \alias{translate_vulcan}
-\title{Vulcan translation}
+\title{Vulcan translator}
 \usage{
 translate_vulcan(text)
 }

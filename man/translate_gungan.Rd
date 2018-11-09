@@ -2,7 +2,7 @@
 % Please edit documentation in R/star-wars.R
 \name{translate_gungan}
 \alias{translate_gungan}
-\title{Gungan translation}
+\title{Gungan translator}
 \usage{
 translate_gungan(text)
 }

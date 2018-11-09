@@ -2,7 +2,7 @@
 % Please edit documentation in R/character-talks.R
 \name{translate_dolan}
 \alias{translate_dolan}
-\title{Dolan translation}
+\title{Dolan translator}
 \usage{
 translate_dolan(text)
 }

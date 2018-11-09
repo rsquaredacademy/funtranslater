@@ -1,4 +1,4 @@
-#' Minion translation
+#' Minion translator
 #'
 #' Convert from English to Minion speak.
 #'
@@ -21,7 +21,7 @@ translate_minion <- function(text) {
 
 }
 
-#' Ferb Latin translation
+#' Ferb Latin translator
 #'
 #' Convert from English to Ferb Latin.
 #'
@@ -44,7 +44,7 @@ translate_ferblatin <- function(text) {
 
 }
 
-#' Swedish chef translation
+#' Swedish chef translator
 #'
 #' Convert from English to Swedish chef speak.
 #'
@@ -67,7 +67,7 @@ translate_chef <- function(text) {
 
 }
 
-#' Dolan translation
+#' Dolan translator
 #'
 #' Convert from English to Dolan.
 #'
@@ -90,7 +90,7 @@ translate_dolan <- function(text) {
 
 }
 
-#' Fudd translation
+#' Fudd translator
 #'
 #' Convert from English to Fudd speak.
 #'

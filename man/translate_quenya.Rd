@@ -2,7 +2,7 @@
 % Please edit documentation in R/elvish.R
 \name{translate_quenya}
 \alias{translate_quenya}
-\title{Quenya translation}
+\title{Quenya translator}
 \usage{
 translate_quenya(text)
 }

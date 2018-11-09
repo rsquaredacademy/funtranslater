@@ -2,7 +2,7 @@
 % Please edit documentation in R/elvish.R
 \name{translate_sindarin}
 \alias{translate_sindarin}
-\title{Sindarin translation}
+\title{Sindarin translator}
 \usage{
 translate_sindarin(text)
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/character-talks.R
 \name{translate_fudd}
 \alias{translate_fudd}
-\title{Fudd translation}
+\title{Fudd translator}
 \usage{
 translate_fudd(text)
 }

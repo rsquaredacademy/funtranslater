@@ -2,7 +2,7 @@
 % Please edit documentation in R/english.R
 \name{translate_uk_to_us_english}
 \alias{translate_uk_to_us_english}
-\title{UK to US translation}
+\title{UK to US translator}
 \usage{
 translate_uk_to_us_english(text)
 }

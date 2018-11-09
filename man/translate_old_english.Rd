@@ -2,7 +2,7 @@
 % Please edit documentation in R/english.R
 \name{translate_old_english}
 \alias{translate_old_english}
-\title{Old English translation}
+\title{Old English translator}
 \usage{
 translate_old_english(text)
 }

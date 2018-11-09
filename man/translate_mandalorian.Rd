@@ -2,7 +2,7 @@
 % Please edit documentation in R/star-wars.R
 \name{translate_mandalorian}
 \alias{translate_mandalorian}
-\title{Mandalorian translation}
+\title{Mandalorian translator}
 \usage{
 translate_mandalorian(text)
 }

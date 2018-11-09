@@ -1,4 +1,4 @@
-#' Shakespeare translation
+#' Shakespeare translator
 #'
 #' Convert from English to Shakespeare
 #'
@@ -21,7 +21,7 @@ translate_shakespeare <- function(text) {
 
 }
 
-#' Old English translation
+#' Old English translator
 #'
 #' Convert from modern English to old English.
 #'
@@ -44,7 +44,7 @@ translate_old_english <- function(text) {
 
 }
 
-#' US to UK translation
+#' US to UK translator
 #'
 #' Convert from US English to UK English spelling.
 #'
@@ -67,7 +67,7 @@ translate_us_to_uk_english <- function(text) {
 
 }
 
-#' UK to US translation
+#' UK to US translator
 #'
 #' Convert from UK English to US English spelling.
 #'

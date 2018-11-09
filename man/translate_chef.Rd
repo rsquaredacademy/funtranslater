@@ -2,7 +2,7 @@
 % Please edit documentation in R/character-talks.R
 \name{translate_chef}
 \alias{translate_chef}
-\title{Swedish chef translation}
+\title{Swedish chef translator}
 \usage{
 translate_chef(text)
 }

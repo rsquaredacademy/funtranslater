@@ -2,7 +2,7 @@
 % Please edit documentation in R/star-trek.R
 \name{translate_klingon}
 \alias{translate_klingon}
-\title{Klingon translation}
+\title{Klingon translator}
 \usage{
 translate_klingon(text)
 }

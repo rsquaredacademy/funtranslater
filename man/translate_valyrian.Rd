@@ -2,7 +2,7 @@
 % Please edit documentation in R/got.R
 \name{translate_valyrian}
 \alias{translate_valyrian}
-\title{Valyrian translation}
+\title{Valyrian translator}
 \usage{
 translate_valyrian(text)
 }

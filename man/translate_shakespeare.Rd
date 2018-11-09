@@ -2,7 +2,7 @@
 % Please edit documentation in R/english.R
 \name{translate_shakespeare}
 \alias{translate_shakespeare}
-\title{Shakespeare translation}
+\title{Shakespeare translator}
 \usage{
 translate_shakespeare(text)
 }
