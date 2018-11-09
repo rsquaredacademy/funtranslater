@@ -103,4 +103,10 @@ httptest::with_mock_api({
       "Nu went kia coruscant which meo ten parsekas salini!")
   })
 
+  test_that("huttese translation works", {
+    expect_equivalent(
+      translate_huttese("Did you see the bounty hunter?"),
+      "Did u stuka doe murishani?")
+  })
+
 })

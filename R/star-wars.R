@@ -66,3 +66,26 @@ translate_gungan <- function(text) {
   }
 
 }
+
+#' Huttese translation
+#'
+#' Convert from English to Huttese language.
+#'
+#' @param text Text to be converted.
+#'
+#' @examples
+#' \dontrun{
+#' translate_huttese("What nonsense is this?")
+#' }
+#'
+#' @export
+#'
+translate_huttese <- function(text) {
+
+  if (pingr::is_online()) {
+    prep_translate(text, "huttese")
+  } else {
+    stop("Please check your internet connection.", call. = FALSE)
+  }
+
+}
