@@ -144,4 +144,16 @@ httptest::with_mock_api({
       translate_dothraki("Have you seen my lady’s dragon?"),
       "Hash yeri ray tih erinak’s zhavorsa?")
   })
+
+  test_that("valyrian translation works", {
+    expect_equivalent(
+      translate_valyrian("I am Daenerys Stormborn of the House Targaryen, of the blood of Old Valyria. Valyrian is my mother tongue."),
+      "Hash yeri ray tih erinak’s zhavorsa?")
+  })
+
+  test_that("sindarin translation works", {
+    expect_equivalent(
+      translate_sindarin("The world is changed; I can feel it in the water, I can feel it in the earth, I can smell it in the air."),
+      "Hash yeri ray tih erinak’s zhavorsa?")
+  })
 })
