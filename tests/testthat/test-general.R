@@ -97,4 +97,10 @@ httptest::with_mock_api({
       "Nu went kia coruscant which meo ten parsekas salini!")
   })
 
+  test_that("gungan translation works", {
+    expect_equivalent(
+      translate_gungan("You came to my home and I said okay!"),
+      "Nu went kia coruscant which meo ten parsekas salini!")
+  })
+
 })

@@ -43,3 +43,26 @@ translate_sith <- function(text) {
   }
 
 }
+
+#' Gungan translation
+#'
+#' Convert from English to Gungan language.
+#'
+#' @param text Text to be converted.
+#'
+#' @examples
+#' \dontrun{
+#' translate_gungan("What nonsense is this?")
+#' }
+#'
+#' @export
+#'
+translate_gungan <- function(text) {
+
+  if (pingr::is_online()) {
+    prep_translate(text, "gungan")
+  } else {
+    stop("Please check your internet connection.", call. = FALSE)
+  }
+
+}
