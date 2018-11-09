@@ -66,3 +66,26 @@ translate_chef <- function(text) {
   }
 
 }
+
+#' Dolan translation
+#'
+#' Convert from English to Dolan.
+#'
+#' @param text Text to be converted.
+#'
+#' @examples
+#' \dontrun{
+#' translate_dolan("What nonsense is this?")
+#' }
+#'
+#' @export
+#'
+translate_dolan <- function(text) {
+
+  if (pingr::is_online()) {
+    prep_translate(text, "dolan")
+  } else {
+    stop("Please check your internet connection.", call. = FALSE)
+  }
+
+}

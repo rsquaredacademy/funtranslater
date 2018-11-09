@@ -180,4 +180,11 @@ httptest::with_mock_api({
       translate_chef("Cooking is fun when you do it with a chef"),
       "Hash yeri ray tih erinak’s zhavorsa?")
   })
+
+  test_that("dolan translation works", {
+    expect_equivalent(
+      translate_dolan("I have to give a presentation to people."),
+      "Hash yeri ray tih erinak’s zhavorsa?")
+  })
+
 })
