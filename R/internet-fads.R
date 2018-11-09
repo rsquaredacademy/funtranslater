@@ -21,23 +21,23 @@ translate_emoji <- function(text) {
 
 }
 
-#' Wowslang	 converter
+#' Leetspeak converter
 #'
-#' Convert from English to World of Warcraft slang. 
+#' Convert from English to Leet.
 #'
 #' @param text Text to be converted.
 #'
 #' @examples
 #' \dontrun{
-#' translate_wowslang("What nonsense is this?")
+#' translate_leetspeak("What nonsense is this?")
 #' }
 #'
 #' @export
 #'
-translate_wowslang <- function(text) {
+translate_leetspeak <- function(text) {
 
   if (pingr::is_online()) {
-    prep_translate(text, "wowslang")
+    prep_translate(text, "leetspeak")
   } else {
     stop("Please check your internet connection.", call. = FALSE)
   }

@@ -55,4 +55,10 @@ httptest::with_mock_api({
       "Apple &#x1F34F; and lemon are great fruits.")
   })
 
+  test_that("leetspeak translation works", {
+    expect_equivalent(
+      translate_leetspeak("Where this is lots of love there is lots of fighting."),
+      "W]-[3R3 THYZ Is LOTs ()ph 1OV3 T]-[eR3 !5 l0tz 0ph fYG]-[TYgng.")
+  })
+
 })
