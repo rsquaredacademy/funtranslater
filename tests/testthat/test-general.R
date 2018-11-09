@@ -120,4 +120,10 @@ httptest::with_mock_api({
       translate_cheunh("I went to coruscant which was ten parsec away!"),
       "Ch'ah went ch'at coruscant vea was bav parsec ch'itt'suvrecah!")
   })
+
+  test_that("vulcan translation works", {
+    expect_equivalent(
+      translate_vulcan("May I say that I have not thoroughly enjoyed serving with humans? I find their illogical and foolish emotions a constant irritant."),
+      "Lau I leralmin ik I ma ri thoroughly tizh-tor serving k' komihn? I talal ish-veh riolozhikaik heh duhik zherka wuh ek'kayik ornat.")
+  })
 })
