@@ -20,3 +20,26 @@ translate_sindarin <- function(text) {
   }
 
 }
+
+#' Quenya translation
+#'
+#' Convert from English to Quenya.
+#'
+#' @param text Text to be converted.
+#'
+#' @examples
+#' \dontrun{
+#' translate_quenya("What nonsense is this?")
+#' }
+#'
+#' @export
+#'
+translate_quenya <- function(text) {
+
+  if (pingr::is_online()) {
+    prep_translate(text, "quenya")
+  } else {
+    stop("Please check your internet connection.", call. = FALSE)
+  }
+
+}

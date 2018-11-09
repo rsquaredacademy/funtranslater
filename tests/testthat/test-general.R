@@ -156,4 +156,10 @@ httptest::with_mock_api({
       translate_sindarin("The world is changed; I can feel it in the water, I can feel it in the earth, I can smell it in the air."),
       "Hash yeri ray tih erinak’s zhavorsa?")
   })
+
+  test_that("quenya translation works", {
+    expect_equivalent(
+      translate_quenya("I am Arwen - I've come to help you. Hear my voice... Come back to the light."),
+      "Hash yeri ray tih erinak’s zhavorsa?")
+  })
 })
