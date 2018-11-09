@@ -187,4 +187,10 @@ httptest::with_mock_api({
       "Hash yeri ray tih erinak’s zhavorsa?")
   })
 
+  test_that("fudd translation works", {
+    expect_equivalent(
+      translate_fudd("Be very very quiet. I am hunting rabbits."),
+      "Hash yeri ray tih erinak’s zhavorsa?")
+  })
+
 })

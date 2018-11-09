@@ -89,3 +89,26 @@ translate_dolan <- function(text) {
   }
 
 }
+
+#' Fudd translation
+#'
+#' Convert from English to Fudd speak.
+#'
+#' @param text Text to be converted.
+#'
+#' @examples
+#' \dontrun{
+#' translate_fudd("What nonsense is this?")
+#' }
+#'
+#' @export
+#'
+translate_fudd <- function(text) {
+
+  if (pingr::is_online()) {
+    prep_translate(text, "fudd")
+  } else {
+    stop("Please check your internet connection.", call. = FALSE)
+  }
+
+}
