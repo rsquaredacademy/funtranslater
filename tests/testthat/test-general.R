@@ -162,4 +162,10 @@ httptest::with_mock_api({
       translate_quenya("I am Arwen - I've come to help you. Hear my voice... Come back to the light."),
       "Hash yeri ray tih erinak’s zhavorsa?")
   })
+
+  test_that("minion translation works", {
+    expect_equivalent(
+      translate_minion("Hello, I am hungry!"),
+      "Hash yeri ray tih erinak’s zhavorsa?")
+  })
 })
