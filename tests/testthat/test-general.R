@@ -73,4 +73,10 @@ httptest::with_mock_api({
       " {Mr}. {Tim} {ate} twihynde innancund m¯æle, oð {unfortunately} {what} sê {ate} fæstnian of hê sweltan.")
   })
 
+  test_that("us to uk english translation works", {
+    expect_equivalent(
+      translate_us_to_uk_english("He agonized over the aging armored cars."),
+      "He agonised over the ageing armoured cars.")
+  })
+
 })
