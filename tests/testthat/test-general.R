@@ -79,4 +79,10 @@ httptest::with_mock_api({
       "He agonised over the ageing armoured cars.")
   })
 
+  test_that("uk to us english translation works", {
+    expect_equivalent(
+      translate_uk_to_us_english("The artefacts of the behavioural elements cancelled the commercialised monotone."),
+      "The artifacts of the behavioral elements canceled the commercialized monotone.")
+  })
+
 })

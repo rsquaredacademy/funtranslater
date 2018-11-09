@@ -66,3 +66,26 @@ translate_us_to_uk_english <- function(text) {
   }
 
 }
+
+#' UK to US translation
+#'
+#' Convert from UK English to US English spelling.
+#'
+#' @param text Text to be converted.
+#'
+#' @examples
+#' \dontrun{
+#' translate_uk_to_us_english("What nonsense is this?")
+#' }
+#'
+#' @export
+#'
+translate_uk_to_us_english <- function(text) {
+
+  if (pingr::is_online()) {
+    prep_translate(text, "uk2us")
+  } else {
+    stop("Please check your internet connection.", call. = FALSE)
+  }
+
+}
