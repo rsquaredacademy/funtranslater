@@ -138,4 +138,10 @@ httptest::with_mock_api({
       translate_romulan("May I say that I have not thoroughly enjoyed serving with humans? I find their illogical and foolish emotions a constant irritant."),
       "'iv do tlhih baj? Chah are going to baq tlhih.")
   })
+
+  test_that("dothraki translation works", {
+    expect_equivalent(
+      translate_dothraki("Have you seen my lady’s dragon?"),
+      "Hash yeri ray tih erinak’s zhavorsa?")
+  })
 })
