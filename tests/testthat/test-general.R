@@ -48,5 +48,11 @@ httptest::with_mock_api({
       translate_australian("I went to Australian and the cheap wine made me crave for McDonald's burgers."),
       "I went to Australian and the cheap wine made me crave for maccas burgers.")
   })
-  
+
+  test_that("emoji translation works", {
+    expect_equivalent(
+      translate_emoji("Apple and lemon are great fruits."),
+      "Apple &#x1F34F; and lemon are great fruits.")
+  })
+
 })
