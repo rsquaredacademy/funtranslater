@@ -112,3 +112,26 @@ translate_norfolk <- function(text) {
   }
 
 }
+
+#' Austrian translator
+#'
+#' Translate from English to Austrian.
+#'
+#' @param text Text to be translated.
+#'
+#' @examples
+#' \dontrun{
+#' translate_austrian("What nonsense is this?")
+#' }
+#'
+#' @export
+#'
+translate_austrian <- function(text) {
+
+  if (pingr::is_online()) {
+    prep_translate(text, "austrian")
+  } else {
+    stop("Please check your internet connection.", call. = FALSE)
+  }
+
+}
