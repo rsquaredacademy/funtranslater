@@ -11,8 +11,6 @@ status](https://www.r-pkg.org/badges/version/funtranslater)](https://cran.r-proj
 status](https://travis-ci.org/rsquaredacademy/funtranslater.svg?branch=master)](https://travis-ci.org/rsquaredacademy/funtranslater)
 [![AppVeyor build
 status](https://ci.appveyor.com/api/projects/status/github/rsquaredacademy/funtranslater?branch=master&svg=true)](https://ci.appveyor.com/project/rsquaredacademy/funtranslater)
-[![Coverage
-status](https://codecov.io/gh/rsquaredacademy/funtranslater/branch/master/graph/badge.svg)](https://codecov.io/github/rsquaredacademy/funtranslater?branch=master)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
 ## Installation

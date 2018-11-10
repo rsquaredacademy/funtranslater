@@ -13,10 +13,6 @@ Imports:
     httr,
     jsonlite,
     pingr
-Suggests: 
-    httptest,
-    testthat,
-    covr
 License: MIT + file LICENSE
 URL: https://funtranslater.rsquaredacademy.com/, https://github.com/rsquaredacademy/funtranslater
 BugReports: https://github.com/rsquaredacademy/funtranslater/issues
